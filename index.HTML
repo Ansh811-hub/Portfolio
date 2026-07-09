@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ansh Bhardwaj — Backend Systems Engineer</title>
+<meta name="description" content="Backend systems engineer building distributed systems that hold up under real load. Java, Spring Boot, distributed systems." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <span class="nav__mark">Ansh Bhardwaj</span>
+  <div class="nav__links">
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<header class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero__content">
+    <p class="hero__eyebrow">Available for backend engineering internships</p>
+    <h1 class="hero__name" id="hero-name">Ansh Bhardwaj</h1>
+    <p class="hero__role">Backend systems engineer who <span id="typewriter" class="typewriter"></span><span class="cursor">|</span></p>
+    <div class="hero__meta">
+      <span>Ghaziabad, India</span>
+      <span>Third-year B.Tech IT</span>
+      <span class="stack-badge">Java — Spring Boot at the core</span>
+    </div>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="assets/resume.pdf" download>Download résumé →</a>
+      <a class="btn btn--ghost" href="#work">See the work</a>
+    </div>
+  </div>
+  <div class="hero__photo">
+    <img src="tech-spardha-award-ceremony (1).jpg" alt="Ansh Bhardwaj profile photo" loading="eager">
+  </div>
+  <div class="hero__scroll"><span class="line"></span> SCROLL</div>
+</header>
+
+<!-- ============================================================
+     METRICS TICKER
+     ============================================================ -->
+<div class="ticker">
+  <div class="ticker__track" id="ticker-track">
+    <!-- duplicated in JS-free CSS loop by repeating markup twice -->
+    <div class="ticker__item"><b>87ms</b> P99 latency, AEGIS <span class="sep">/</span></div>
+    <div class="ticker__item"><b>1,000+</b> concurrent users served <span class="sep">/</span></div>
+    <div class="ticker__item"><b>300+</b> students mentored <span class="sep">/</span></div>
+    <div class="ticker__item"><b>Top 5</b> Techpreneur, IIT Jammu <span class="sep">/</span></div>
+    <div class="ticker__item"><b>50%</b> query load reduction <span class="sep">/</span></div>
+    <div class="ticker__item"><b>1st</b> Tech Spardha 2k25 Ideathon <span class="sep">/</span></div>
+    <!-- repeat for seamless loop -->
+    <div class="ticker__item"><b>87ms</b> P99 latency, AEGIS <span class="sep">/</span></div>
+    <div class="ticker__item"><b>1,000+</b> concurrent users served <span class="sep">/</span></div>
+    <div class="ticker__item"><b>300+</b> students mentored <span class="sep">/</span></div>
+    <div class="ticker__item"><b>Top 5</b> Techpreneur, IIT Jammu <span class="sep">/</span></div>
+    <div class="ticker__item"><b>50%</b> query load reduction <span class="sep">/</span></div>
+    <div class="ticker__item"><b>1st</b> Tech Spardha 2k25 Ideathon <span class="sep">/</span></div>
+  </div>
+</div>
+
+<!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+<section id="work">
+  <div class="container">
+    <div class="section__head reveal">
+      <div>
+        <p class="section__eyebrow">Selected work</p>
+        <h2 class="section__title">Systems built for real traffic</h2>
+      </div>
+      <p class="section__note">Four projects, four different constraints — routing under time pressure, multi-tenant isolation, healthcare data integrity, and interface craft.</p>
+    </div>
+
+    <!-- AEGIS -->
+    <div class="project reveal">
+      <div>
+        <p class="project__index">01 / Flagship</p>
+        <h3 class="project__name">AEGIS</h3>
+        <span class="project__badge">Real-time emergency response</span>
+        <div class="project__links">
+          <a href="https://github.com/Ansh811-hub/AEGIS." target="_blank" rel="noopener">Repository</a>
+          <a href="https://lifelineai-git-main-alsas-projects-737cc79e.vercel.app" target="_blank" rel="noopener">Live demo</a>
+        </div>
+      </div>
+      <div class="project__body">
+        <dl>
+          <dt>Problem</dt>
+          <dd>Emergency dispatch loses critical minutes to manual triage — matching the right ambulance, route, and hospital by hand doesn't scale under real load.</dd>
+          <dt>Approach</dt>
+          <dd>Five Spring Boot microservices + three FastAPI AI services: severity classification, route optimization, and hospital matching, coordinated through a WebSocket command center.</dd>
+        </dl>
+        <div class="project__metrics">
+          <div><b>87ms</b><span>P99 latency</span></div>
+          <div><b>1,000+</b><span>Concurrent users</span></div>
+          <div><b>50%</b><span>Query load cut</span></div>
+        </div>
+        <div class="project__stack">
+          <span>Java</span><span>Spring Boot</span><span>Python</span><span>FastAPI</span>
+          <span>PostgreSQL</span><span>WebSockets/STOMP</span><span>Next.js</span><span>Docker</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- StartupOps -->
+    <div class="project reveal">
+      <div>
+        <p class="project__index">02</p>
+        <h3 class="project__name">StartupOps</h3>
+        <span class="project__badge">🏆 Top 5, Techpreneur — Udyamitsav 2026, IIT Jammu</span>
+        <div class="project__links">
+          <a href="https://github.com/Ansh811-hub/StartupOps" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </div>
+      <div class="project__body">
+        <dl>
+          <dt>Problem</dt>
+          <dd>Multi-tenant SaaS needs auth and access control that holds up under concurrent load without leaking data across tenants.</dd>
+          <dt>Approach</dt>
+          <dd>JWT authentication with granular RBAC, and a modular MVC architecture decoupling task, workflow, and user management for independent horizontal scaling.</dd>
+        </dl>
+        <div class="project__metrics">
+          <div><b>200+</b><span>Concurrent users</span></div>
+          <div><b>~30%</b><span>Fewer unauthorized access incidents</span></div>
+          <div><b>~25%</b><span>Faster API response</span></div>
+        </div>
+        <div class="project__stack">
+          <span>Java</span><span>Spring Boot</span><span>JWT</span><span>RBAC</span><span>MySQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meditrack -->
+    <div class="project reveal">
+      <div>
+        <p class="project__index">03</p>
+        <h3 class="project__name">Meditrack</h3>
+        <span class="project__badge">🥇 1st Place, Tech Spardha 2k25 Ideathon</span>
+        <div class="project__links">
+          <a href="https://github.com/Ansh811-hub/meditrack-guardian" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </div>
+      <div class="project__body">
+        <dl>
+          <dt>Problem</dt>
+          <dd>Hospital patient tracking and scheduling breaks down under concurrent access, and RBAC across staff tiers is usually an afterthought.</dd>
+          <dt>Approach</dt>
+          <dd>Real-time patient tracking backend with MongoDB compound indexing for query speed, and RBAC-secured REST endpoints across three distinct user tiers.</dd>
+        </dl>
+        <div class="project__metrics">
+          <div><b>100+</b><span>Concurrent users</span></div>
+          <div><b>~35%</b><span>Workflow overhead cut</span></div>
+          <div><b>~30%</b><span>Latency reduction</span></div>
+        </div>
+        <div class="project__stack">
+          <span>Java</span><span>Spring Boot</span><span>MongoDB</span><span>RBAC</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ECLYPSE -->
+    <div class="project reveal">
+      <div>
+        <p class="project__index">04</p>
+        <h3 class="project__name">ECLYPSE</h3>
+        <span class="project__badge">Full-stack — frontend live, backend in progress</span>
+        <div class="project__links">
+          <a href="https://github.com/Ansh811-hub/EXCLIPSE" target="_blank" rel="noopener">Repository</a>
+          <a href="https://ansh811-hub.github.io/EXCLIPSE/" target="_blank" rel="noopener">Live demo</a>
+        </div>
+      </div>
+      <div class="project__body">
+        <dl>
+          <dt>Problem</dt>
+          <dd>Most backend engineers can't design an interface that doesn't look like a Bootstrap default — proving range beyond the API layer.</dd>
+          <dt>Approach</dt>
+          <dd>Cinematic dark-theme landing page with GSAP-driven scroll animation and a custom design token system, WCAG-checked for contrast. Now expanding into a full-stack build with a Spring Boot backend.</dd>
+        </dl>
+        <div class="project__stack">
+          <span>GSAP</span><span>ScrollTrigger</span><span>HTML/CSS/JS</span><span>Spring Boot (in progress)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+<section id="experience">
+  <div class="container">
+    <div class="section__head reveal">
+      <div>
+        <p class="section__eyebrow">Track record</p>
+        <h2 class="section__title">Experience &amp; leadership</h2>
+      </div>
+      <p class="section__note">In chronological order — each role real, dated, and ongoing where marked.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__item reveal">
+        <p class="timeline__date">JAN 2026 — PRESENT</p>
+        <h3 class="timeline__role">Campus Technical Lead</h3>
+        <p class="timeline__org">HackerRank Campus Crew, IMS Engineering College</p>
+        <ul class="timeline__desc">
+          <li>Designed and ran algorithmic contests and workshops that grew campus problem-solving participation by 60%+.</li>
+          <li>Acted as technical architect across 3+ campus hackathons, shipping production-ready demos within 24–36 hour sprints.</li>
+          <li>Mentored 300+ third-year CSE students in DSA, system design fundamentals, and SWE interview preparation.</li>
+        </ul>
+      </div>
+
+      <div class="timeline__item reveal">
+        <p class="timeline__date">2026 — PRESENT · 2 CONSECUTIVE TERMS</p>
+        <h3 class="timeline__role">Campus Ambassador</h3>
+        <p class="timeline__org">GeeksforGeeks</p>
+        <ul class="timeline__desc">
+          <li>Led DSA workshops and peer mentorship across two consecutive terms, driving hands-on preparation for 100+ students.</li>
+          <li>Organized and hosted a 300+ attendee offline mentorship event in the college auditorium alongside Chandhan Jha, Associate Director, GeeksforGeeks.</li>
+        </ul>
+      </div>
+
+      <div class="timeline__item reveal">
+        <p class="timeline__date">2026</p>
+        <h3 class="timeline__role">Cloud Virtual Intern</h3>
+        <p class="timeline__org">AWS Academy (AICTE)</p>
+        <ul class="timeline__desc">
+          <li>Completed an 8-week AWS Cloud Virtual Internship earning Grade O (Outstanding, 90–100) across cloud architecture, compute, storage, and networking.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ACHIEVEMENTS + CERTIFICATIONS
+     ============================================================ -->
+<section id="achievements">
+  <div class="container">
+    <div class="section__head reveal">
+      <div>
+        <p class="section__eyebrow">Proof, not just claims</p>
+        <h2 class="section__title">Achievements &amp; certifications</h2>
+      </div>
+      <p class="section__note">Real trophies, real hackathons, real certificate links.</p>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery__item gallery__item--wide gallery__item--top5 reveal">
+        <div class="gallery__img"><img src="iit-jammu-udyamitsav-2026.png" alt="Top 5 team photo, Techpreneur, Udyamitsav 2026, IIT Jammu" loading="lazy"></div>
+        <div class="gallery__caption">
+          <h4>Top 5, Techpreneur — Udyamitsav 2026</h4>
+          <p>IIT Jammu · 100+ teams · StartupOps</p>
+        </div>
+      </div>
+      <div class="gallery__item reveal">
+        <div class="gallery__img"><img src="trophy-tech-spardha (1).jpg" alt="1st Place trophy, Tech Spardha 2k25 Ideathon, IMS Engineering College" loading="lazy"></div>
+        <div class="gallery__caption">
+          <h4>1st Place — Tech Spardha 2k25 Ideathon Trophy</h4>
+          <p>IMS Engineering College · Nov 2025 · Meditrack</p>
+          <p class="gallery__detail">Winner recognition for product idea, solution pitch, and final stage presentation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="certs">
+      <div class="certs__item reveal">
+        <div><h4>AWS Academy Cloud Foundations</h4><p>Certificate ID 420a9bc474b5ee28e81e</p></div>
+      </div>
+      <div class="certs__item reveal">
+        <div><h4>AWS Academy Cloud Architecting</h4><p>Grade O (Outstanding)</p></div>
+      </div>
+      <div class="certs__item reveal">
+        <div><h4>Core CS Subject for Interview Prep</h4><p>GeeksforGeeks</p></div>
+        <a href="https://media.geeksforgeeks.org/courses/certificates/de4539a79370b252b82b18f891ab3cf9.pdf" target="_blank" rel="noopener">View →</a>
+      </div>
+      <div class="certs__item reveal">
+        <div><h4>Low Level Design: Basics to Advance</h4><p>GeeksforGeeks · System Design</p></div>
+        <a href="https://media.geeksforgeeks.org/courses/certificates/f0c0b45481bb2196d7d97259c4aed67b.pdf" target="_blank" rel="noopener">View →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<footer class="contact" id="contact">
+  <div class="container" style="padding-top:130px; padding-bottom: 60px;">
+    <h2 class="contact__title reveal">Let's build something that has to <span class="accent">actually work</span> under load.</h2>
+    <div class="contact__row reveal">
+      <div class="contact__links">
+        <a href="mailto:anshbhardwaj150507@gmail.com">anshbhardwaj150507@gmail.com</a>
+        <a href="https://linkedin.com/in/ansh-bhardwaj-255368324" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Ansh811-hub" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://leetcode.com/u/Ansh_bhardwaj____/" target="_blank" rel="noopener">LeetCode</a>
+        <a href="https://codeforces.com/profile/Ansh1505Bhardwaj" target="_blank" rel="noopener">Codeforces</a>
+        <a href="https://www.geeksforgeeks.org/profile/wwanshbharwn2" target="_blank" rel="noopener">GeeksforGeeks</a>
+      </div>
+      <a class="btn btn--primary" href="assets/resume.pdf" download>Download résumé →</a>
+    </div>
+  </div>
+  <div class="footer">
+    <span>© 2026 Ansh Bhardwaj</span>
+    <span>Ghaziabad, India</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
